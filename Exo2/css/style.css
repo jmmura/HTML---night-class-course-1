@@ -1,0 +1,99 @@
+body {
+      margin: 0;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.92);
+      text-align: center;
+      font-family: sans-serif;
+}
+
+a{
+      color: rgba(255, 255, 255, 0.747);
+      
+}
+
+header{
+      background-color: rgb(194,77,44);
+      height: 14rem;
+      color: black;
+}
+.titre{
+      padding: 2%;
+}
+.home_image{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5%;
+}
+
+.contact {
+      text-align: left;
+}
+
+.formulaire{
+      text-align: left;
+      padding-left: 5%;
+}
+
+.formulaire button{
+      color: white;
+      background-color: rgb(194,77,44);
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 15px;
+}
+
+
+
+
+
+.gallerie {
+	display: flex;
+	transition: .3s;	
+	
+}
+.gallerie:hover .gallery__image{
+      filter:grayscale(1);
+}
+
+.gallery__column {
+		display: flex;
+		flex-direction: column;
+            width: 25%;
+	}
+.gallery__link {
+      margin: 2px;
+	overflow: hidden;
+	}
+.gallery__link:hover .gallery__image{
+      filter: grayscale(0);
+}
+.gallery__link:hover .gallery__caption {
+      opacity: 1;
+}
+
+.gallery__thumb {
+		position: relative;
+	}
+
+.gallery__image {
+		display: block;
+		width: 100%;
+		transition: .3s;	
+}
+.gallery__image:hover {
+      transform: scale(1.1);
+}
+
+.gallery__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+            padding-bottom: 10px;
+		font-size: 16px;
+		color: white;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+	}
